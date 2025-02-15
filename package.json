@@ -1,5 +1,5 @@
 {
-  "name": "my-excalidraw-block",
+  "name": "excalidraw-block",
   "version": "1.0.0",
   "description": "A Gutenberg block that embeds the Excalidraw editor",
   "main": "build/index.js",

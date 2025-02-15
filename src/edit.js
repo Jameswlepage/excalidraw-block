@@ -16,7 +16,7 @@ import {
 
 export default function Edit(props) {
   const { attributes, setAttributes } = props;
-  const blockProps = useBlockProps({ className: 'my-excalidraw-block-editor' });
+  const blockProps = useBlockProps({ className: 'excalidraw-block-editor' });
 
   const [excalidrawAPI, setExcalidrawAPI] = useState(null);
   const timeoutRef = useRef(null);
@@ -143,12 +143,12 @@ export default function Edit(props) {
   return (
     <>
       <InspectorControls>
-        <PanelBody title={__('Display Settings', 'my-excalidraw-block')}>
+        <PanelBody title={__('Display Settings', 'excalidraw-block')}>
           <SelectControl
-            label={__('Aspect Ratio', 'my-excalidraw-block')}
+            label={__('Aspect Ratio', 'excalidraw-block')}
             value={attributes.aspectRatio}
             options={[
-              { label: __('Auto', 'my-excalidraw-block'), value: 'auto' },
+              { label: __('Auto', 'excalidraw-block'), value: 'auto' },
               { label: '16:9', value: '16:9' },
               { label: '4:3', value: '4:3' },
               { label: '1:1', value: '1:1' },
@@ -156,19 +156,19 @@ export default function Edit(props) {
             onChange={(aspectRatio) => setAttributes({ aspectRatio })}
           />
           <ToggleControl
-            label={__('Show Border', 'my-excalidraw-block')}
+            label={__('Show Border', 'excalidraw-block')}
             checked={attributes.showBorder}
             onChange={(showBorder) => setAttributes({ showBorder })}
           />
           <TextareaControl
-            label={__('Alt Text', 'my-excalidraw-block')}
-            help={__('Describe the purpose of this image', 'my-excalidraw-block')}
+            label={__('Alt Text', 'excalidraw-block')}
+            help={__('Describe the purpose of this image', 'excalidraw-block')}
             value={attributes.altText}
             onChange={(altText) => setAttributes({ altText })}
           />
           <TextareaControl
-            label={__('Caption', 'my-excalidraw-block')}
-            help={__('Add a caption below the image', 'my-excalidraw-block')}
+            label={__('Caption', 'excalidraw-block')}
+            help={__('Add a caption below the image', 'excalidraw-block')}
             value={attributes.caption}
             onChange={(caption) => setAttributes({ caption })}
           />

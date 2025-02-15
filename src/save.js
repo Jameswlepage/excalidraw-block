@@ -4,7 +4,7 @@ import { useBlockProps } from '@wordpress/block-editor';
 export default function save(props) {
   const { attributes } = props;
   const blockProps = useBlockProps.save({
-    className: 'my-excalidraw-block'
+    className: 'excalidraw-block'
   });
 
   // Calculate aspect ratio styles

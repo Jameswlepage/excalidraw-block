@@ -6,9 +6,9 @@ import './style.scss';
 import Edit from './edit';
 import save from './save';
 
-registerBlockType('my-excalidraw-block/editor', {
-  title: __('Excalidraw Block', 'my-excalidraw-block'),
-  description: __('Embed an Excalidraw editor in the post editor.', 'my-excalidraw-block'),
+registerBlockType('excalidraw-block/editor', {
+  title: __('Excalidraw Block', 'excalidraw-block'),
+  description: __('Embed an Excalidraw editor in the post editor.', 'excalidraw-block'),
   icon: 'edit',
   category: 'widgets',
 

@@ -1,13 +1,13 @@
 {
     "apiVersion": 2,
-    "name": "my-excalidraw-block/editor",
+    "name": "excalidraw-block/editor",
     "title": "Excalidraw Block",
     "category": "widgets",
     "icon": "block-default",
     "description": "A Gutenberg block that embeds an Excalidraw editor in the backend and renders an SVG on the frontend.",
     "keywords": ["excalidraw", "diagram", "sketch"],
   
-    "textdomain": "my-excalidraw-block",
+    "textdomain": "excalidraw-block",
     "editorScript": "file:./build/index.js",
     "editorStyle": "file:./build/index.css",
     "style": "file:./build/style-index.css",
