@@ -15,13 +15,13 @@
     "attributes": {
       "excalidrawData": {
         "type": "string",
-        "default": "" 
+        "default": ""
       },
       "exportedSvg": {
         "type": "string",
         "default": ""
       }
-    },
+    },    
   
     "supports": {
       "html": false

@@ -3,19 +3,28 @@ import { useBlockProps } from '@wordpress/block-editor';
 
 export default function save(props) {
   const { attributes } = props;
-  const blockProps = useBlockProps.save();
+  const blockProps = useBlockProps.save({
+    className: 'my-excalidraw-block'
+  });
 
-  // If there's no exportedSvg yet, render nothing or a placeholder
-  if (!attributes.exportedSvg) {
-    return <div {...blockProps}>No diagram yet.</div>;
-  }
-
-  // Danger: we’re directly inserting the raw SVG string.
-  // Alternatively, you could do data-URL <img src=...>
+  // Always render a container, even if empty
   return (
-    <div
-      {...blockProps}
-      dangerouslySetInnerHTML={{ __html: attributes.exportedSvg }}
-    />
+    <div {...blockProps}>
+      <div 
+        className="excalidraw-svg-container"
+        style={{ 
+          minHeight: '100px',
+          width: '100%',
+          display: 'flex',
+          justifyContent: 'center',
+          alignItems: 'center',
+        }}
+        dangerouslySetInnerHTML={
+          attributes.exportedSvg 
+            ? { __html: attributes.exportedSvg }
+            : undefined
+        }
+      />
+    </div>
   );
 }
