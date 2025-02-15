@@ -1,0 +1,20 @@
+{
+  "name": "my-excalidraw-block",
+  "version": "1.0.0",
+  "description": "A Gutenberg block that embeds the Excalidraw editor",
+  "main": "build/index.js",
+  "scripts": {
+    "build": "wp-scripts build",
+    "start": "wp-scripts start"
+  },
+  "devDependencies": {
+    "@wordpress/scripts": "^25.0.0",
+    "webpack": "^5.98.0"
+  },
+  "dependencies": {
+    "@excalidraw/excalidraw": "0.17.0",
+    "nanoid": "4.0.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}
