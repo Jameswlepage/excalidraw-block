@@ -1,10 +1,42 @@
 .my-excalidraw-block-editor {
-    border: 1px solid #ccc;
-    padding: 10px;
-  
-    .excalidraw {
-      width: 100%;
-      height: 500px;
+  // Block style to match Gutenberg – adjust these values as needed
+  background-color: var(--wp--preset--color--background, #fff);
+  border: 1px solid var(--wp--preset--color--border, #ddd);
+  margin: 1rem 0;
+
+  .excalidraw-wrapper .excalidraw {
+    width: 100%;
+    height: 500px;
+    --theme-filter: none;
+    --color-primary: var(--wp--preset--color--primary, #2271b1);
+    --color-brand: var(--wp--preset--color--primary, #2271b1);
+    --color-brand-hover: var(--wp--preset--color--primary-hover, #1e5b8d);
+    --color-on-primary-container: var(--wp--preset--color--primary-darker, #1e5b8d);
+    --color-surface-primary-container: var(--wp--preset--color--primary-lighter, #e8f4fb);
+    --color-surface-primary-hover: var(--wp--preset--color--primary-lighter, #e8f4fb);
+    --color-primary-darker: var(--wp--preset--color--primary-darker, #1e5b8d);
+    --color-primary-darkest: var(--wp--preset--color--primary-darkest, #1a4f7c);
+    --color-primary-light: var(--wp--preset--color--primary-light, #2c90d2);
+    --button-destructive-bg-color: var(--wp--preset--color--error-light, #fef0f0);
+    --button-destructive-color: var(--wp--preset--color--error, #cc1818);
+    --button-gray-1: var(--wp--preset--color--gray-100, #f0f0f0);
+    --button-gray-2: var(--wp--preset--color--gray-300, #ddd);
+    --button-gray-3: var(--wp--preset--color--gray-500, #949494);
+    --button-special-active-bg-color: var(--wp--preset--color--success-light, #edfaef);
+    --border-radius-md: 0px;
+    --border-radius-lg: 0px;
+    --shadow-island: 0 0 0 1px #ddd;
+    --modal-shadow: 0 0 0 1px #ddd;
+    --sidebar-shadow: 0 0 0 1px #ddd;
+
+
+    &.theme--dark {
+      --button-destructive-bg-color: var(--wp--preset--color--error-light, #442626);
+      --button-destructive-color: var(--wp--preset--color--error, #f86368);
+      --button-gray-1: var(--wp--preset--color--gray-700, #3c3c3c);
+      --button-gray-2: var(--wp--preset--color--gray-600, #757575);
+      --button-gray-3: var(--wp--preset--color--gray-400, #949494);
     }
   }
+}
   

@@ -1,7 +1,40 @@
-.my-excalidraw-block-editor {
+@font-face {
+  font-family: "Virgil";
+  src: url("https://unpkg.com/@excalidraw/excalidraw@0.17.0/dist/excalidraw-assets/Virgil.woff2");
+}
+@font-face {
+  font-family: "Cascadia";
+  src: url("https://unpkg.com/@excalidraw/excalidraw@0.17.0/dist/excalidraw-assets/Cascadia.woff2");
+}
+@font-face {
+  font-family: "Assistant";
+  src: url("https://unpkg.com/@excalidraw/excalidraw@0.17.0/dist/excalidraw-assets/Assistant-Regular.woff2");
+}
+
+.my-excalidraw-block {
+  svg {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .excalidraw-svg-container {
+    position: relative;
+    
     svg {
-      max-width: 100%;
-      height: auto;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
     }
   }
+
+  .excalidraw-caption {
+    margin-top: 0.5rem;
+    text-align: center;
+    font-style: italic;
+    color: #666;
+  }
+}
   

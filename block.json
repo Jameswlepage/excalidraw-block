@@ -20,6 +20,22 @@
       "exportedSvg": {
         "type": "string",
         "default": ""
+      },
+      "aspectRatio": {
+        "type": "string",
+        "default": "auto"
+      },
+      "showBorder": {
+        "type": "boolean",
+        "default": false
+      },
+      "altText": {
+        "type": "string",
+        "default": ""
+      },
+      "caption": {
+        "type": "string",
+        "default": ""
       }
     },    
   
